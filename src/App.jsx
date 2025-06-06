@@ -1,11 +1,16 @@
-import React from 'react'
+// src/App.jsx
+import Navbar from './components/Navbar';
+import AllRoutes from './components/AllRoutes';
 
-const App = () => {
+function App() {
   return (
-    <div>
-      Portfolio
-    </div>
-  )
+    <>
+      <Navbar />
+      <div className="pt-20 px-4">
+        <AllRoutes />
+      </div>
+    </>
+  );
 }
 
-export default App
+export default App;
